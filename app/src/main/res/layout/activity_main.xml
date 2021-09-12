@@ -6,14 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/androidparty"
+        android:contentDescription="TODO" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="276dp"
         android:layout_height="54dp"
         android:layout_marginBottom="8dp"
         android:fontFamily="sans-serif-black"
-        android:text="Happy Birthday, R!"
-        android:textColor="#CD5252"
+        android:text="@string/happy_birthday_r"
+        android:textColor="#193BA0"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,13 +39,14 @@
         android:layout_width="104dp"
         android:layout_height="36dp"
         android:fontFamily="cursive"
-        android:text="From Alaziz"
-        android:textColor="#B17373"
-        android:textSize="16sp"
+        android:text="@string/from"
+        android:textColor="#682020"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.869"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.866" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
